@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title>Friend Finder</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="wrapper1">
+        <div class="navbar">
+            <a href="home.html"><img class="logo1" src="../../images/logo.png" width="80px"></a>
+        </div>
+        <div class="container survey-page">
+         <div class="survey">
+            <h1> Survey Questions</h1>
+            <div class="info" id="info">
+                <i class="pull-right glyphicon glyphicon-info-sign"></i>
+            </div>
+         </div>
+         <!-- Modal -->
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Options</h2>
+              <div class="info-selected">
+                    <div class="s-disagree info-icon"><img src="../../images/s-disagree.png"><h5>Strongly Disagree</h5></div>
+                    <div class="disagree info-icon"><img src="../../images/disagree.png"><h5>Disagree</h5></div>
+                    <div class="neutral info-icon"><img src="../../images/neutral.png"><h5>Neutral</h5></div>
+                    <div class="agree info-icon"><img src="../../images/agree.png"><h5>Agree</h5></div>
+                    <div class="s-agree info-icon"><img src="../../images/s-agree.png"><h5>Strongly Agree</h5></div>
+                </div>
+            </div>
+          </div>
+
+            <div class="panel panel-default">
+
+               <div class="panel-body">
+                  <form role="form">
+                    <h3>About You</h3>
+                    <h4>Name *</h4>
+                    <input type="text" name="" id="name" class="form-control" required >
+                    <h4>Photo *</h4>
+                    <input type="text" name="" id="photo" class="form-control" required >
+                <div class="questions-wrapper">
+                    <div class="question-container">
+                        <h2> Question 1 </h2>
+                        <h4>You find it difficult to introduce yourself to other people.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 2 </h2>
+                        <h4>Your mood can change very quickly.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <h2>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 3 </h2>
+                        <h4>You try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 4 </h2>
+                        <h4>You rarely do something just out of sheer curiosity.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 5 </h2>
+                        <h4>Keeping your options open is more important than having a to-do list.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 6 </h2>
+                        <h4>Being organized is more important to you than being adaptable.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 7 </h2>
+                        <h4>Being able to develop a plan and stick to it is the most important part of every project.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 8 </h2>
+                        <h4>You do not usually initiate conversations.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 9 </h2>
+                        <h4>An interesting book or a video game is often better than a social event.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="question-container">
+                        <h2> Question 10 </h2>
+                        <h4>You consider yourself more practical than creative.</h3>
+                        <div class="answer-selected">
+                            <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
+                            <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
+                            <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
+                            <div class="font agree"><img value="4" class="icon" src="../../images/agree.png"></div>
+                            <div class="font s-agree"><img value="5" class="icon" src="../../images/s-agree.png"></div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                    
+                <!--Submit-->
+                <div class="btn-submit">
+                    <button type="submit" id="submit" class="btn btn-submit btn-primary">Submit</button>
+                </div>
+                </form>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+   </body>
+</html>
