@@ -22,7 +22,7 @@
          </div>
          <!-- Modal -->
          <div id="myModal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content helper">
               <span class="close">&times;</span>
               <h2>Options</h2>
               <div class="info-selected">
@@ -48,7 +48,7 @@
                     <div class="question-container">
                         <h2> Question 1 </h2>
                         <h4>You find it difficult to introduce yourself to other people.</h3>
-                        <div class="answer-selected">
+                        <div class="answer-selected" id="q1">
                             <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
                             <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
                             <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
@@ -60,7 +60,7 @@
                     <div class="question-container">
                         <h2> Question 2 </h2>
                         <h4>Your mood can change very quickly.</h3>
-                        <div class="answer-selected">
+                        <div class="answer-selected" id="q2">
                             <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
                             <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
                             <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
@@ -72,7 +72,7 @@
                     <div class="question-container">
                         <h2> Question 3 </h2>
                         <h4>You try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</h3>
-                        <div class="answer-selected">
+                        <div class="answer-selected" id="q3">
                             <div class="font s-disagree"><img value="1" class="icon" src="../../images/s-disagree.png"></div>
                             <div class="font disagree"><img value="2" class="icon" src="../../images/disagree.png"></div>
                             <div class="font neutral"><img value="3" class="icon" src="../../images/neutral.png"></div>
@@ -81,7 +81,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q4">
                         <h2> Question 4 </h2>
                         <h4>You rarely do something just out of sheer curiosity.</h3>
                         <div class="answer-selected">
@@ -93,7 +93,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q5">
                         <h2> Question 5 </h2>
                         <h4>Keeping your options open is more important than having a to-do list.</h3>
                         <div class="answer-selected">
@@ -105,7 +105,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q6">
                         <h2> Question 6 </h2>
                         <h4>Being organized is more important to you than being adaptable.</h3>
                         <div class="answer-selected">
@@ -117,7 +117,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q7">
                         <h2> Question 7 </h2>
                         <h4>Being able to develop a plan and stick to it is the most important part of every project.</h3>
                         <div class="answer-selected">
@@ -129,7 +129,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q8">
                         <h2> Question 8 </h2>
                         <h4>You do not usually initiate conversations.</h3>
                         <div class="answer-selected">
@@ -141,7 +141,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q9">
                         <h2> Question 9 </h2>
                         <h4>An interesting book or a video game is often better than a social event.</h3>
                         <div class="answer-selected">
@@ -153,7 +153,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="question-container">
+                    <div class="question-container" id="q10">
                         <h2> Question 10 </h2>
                         <h4>You consider yourself more practical than creative.</h3>
                         <div class="answer-selected">
@@ -175,6 +175,21 @@
             </div>
          </div>
       </div>
+
+      <!-- Modal Results  -->
+      <div id="modalResults" class="modalResults modal fade">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2> Your Matching: </h2>
+                 <span id="closeModal" class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 id="matchName"></h2>
+                <img id="matchImage" src='' height="400" width="400">
+            </div>
+        </div>
+      </div>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="app.js"></script>

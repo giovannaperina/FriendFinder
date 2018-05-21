@@ -6,7 +6,7 @@ var bodyParser = require ('body-parser');
 var friendFinder = require ('./app/data/friends.js');
 //Express
 var app = express();
-var port = process.env.PORT || 8000
+var port = process.env.PORT || 8080
 
 app.use(express.static('app/public')); //access CSS files
 
@@ -21,8 +21,8 @@ require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
 
 //Starts the server
-server.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
+app.listen(port, function() {
+    console.log("Server listening on: http://localhost:" + port);
   });
 
 
