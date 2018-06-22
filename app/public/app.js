@@ -18,50 +18,62 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Emoticons fades 
+$('.font').on('click', function() {
+    var questionGroup = $(this).data('question');
+    var answerPoints = $(this).find("img").attr("value")
+
+    $('.font[data-question="'+ questionGroup +'"]').css('opacity','0.3');
+    $(this).css('opacity','1.0');
+    $(this).parent().parent().attr("data-value", answerPoints);
+});
+
 // Survey
 
-var currentURL = window.location.origin;
-console.log(currentURL)
+
 
 $('#submit').on('click', function(){
-    // event.preventDefault();
+    event.preventDefault();
 
     if( ($('#name').val().trim() !== '') && ($('#photo').val().trim() !== '')) {
         var newFriend = {
             name: $('#name').val(),
             photo: $('#photo').val(),
-            scores:[$('#q1').val(),
-                    $('#q2').val(),
-                    $('#q3').val(),
-                    $('#q4').val(),
-                    $('#q5').val(),
-                    $('#q6').val(),
-                    $('#q7').val(),
-                    $('#q8').val(),
-                    $('#q9').val(),
-                    $('#q10').val(),
+            scores:[$('#q1').data("value"),
+                    $('#q2').data("value"),
+                    $('#q3').data("value"),
+                    $('#q4').data("value"),
+                    $('#q5').data("value"),
+                    $('#q6').data("value"),
+                    $('#q7').data("value"),
+                    $('#q8').data("value"),
+                    $('#q9').data("value"),
+                    $('#q10').data("value"),
                 ]
         }
 
-    $.post(currentURL + "/api/friends", newFriend, function(data){
+
+    $.post("/api/friends", newFriend, function(data){
         $('#matchName').text(data.name);
         $('#matchImage').attr('src', data.photo);
 
-        $('#resultsModal').modal('toggle');
+        $('#modalResults').modal('toggle');
         $('#name').val('');
         $('#photo').val('');
+        $(".font").css('opacity', '0.3')
+
+
     });
     } else {
         $(".modal-title").text("Missing required information");
         $(".modal-body").html("<h2>Please answer all the questions before submitting</h2>");
         $("#resultsModal").modal('toggle');
     }
-    return false;
+
 });
 
-$('.font').on('click', function() {
-    $(this).css('opacity','1.0');
-});
+
 
 $('#closeModal').click(function(){
     $.get('/', function(req,res){

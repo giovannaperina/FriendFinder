@@ -132,6 +132,7 @@ body {
 }
 .font {
     opacity: 0.50;
+    transition: all 0.3s;
 }
 
 /* Icons  */
@@ -167,16 +168,7 @@ body {
 
 /*  Modal Results */
 
-.modalResults {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 1rem 1.5rem;
-    width: 60em;
-    border-radius: 0.5rem;
+.modal-body {
     text-align: center;
-    color:#366FBA;
-
 }
+
