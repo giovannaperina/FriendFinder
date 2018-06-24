@@ -124,6 +124,10 @@ body {
     border-radius: 6px;
     overflow: hidden;
 }
+
+.answer2 {
+    padding-bottom: 40px;
+}
 .question-container{
     display:flex;
     align-items: center;
@@ -170,5 +174,9 @@ body {
 
 .modal-body {
     text-align: center;
+}
+
+.favicon {
+    width: 16px;
 }
 
